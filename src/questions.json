@@ -1,0 +1,108 @@
+[
+    {
+      "question": "Qual é a unidade de medida da constante gravitacional (G)?",
+      "options": ["N/m²", "N·m²/kg²", "kg·m/s²", "N·kg²/m²"],
+      "answer": "N·m²/kg²"
+    },
+    {
+      "question": "A força gravitacional entre dois corpos depende diretamente de:",
+      "options": ["Suas velocidades", "Suas massas", "Suas distâncias ao Sol", "Suas cargas elétricas"],
+      "answer": "Suas massas"
+    },
+    {
+      "question": "Qual é o valor aproximado da aceleração da gravidade na Terra?",
+      "options": ["8,9 m/s²", "9,8 m/s²", "10,8 m/s²", "7,8 m/s²"],
+      "answer": "9,8 m/s²"
+    },
+    {
+      "question": "Qual fenômeno é causado pela força gravitacional da Lua?",
+      "options": ["Correntes marítimas", "Movimento das placas tectônicas", "Marés", "Formação de vulcões"],
+      "answer": "Marés"
+    },
+    {
+      "question": "O que acontece com a força gravitacional se a distância entre dois corpos dobra?",
+      "options": ["Aumenta 4 vezes", "Diminui pela metade", "Diminui 4 vezes", "Permanece a mesma"],
+      "answer": "Diminui 4 vezes"
+    },
+    {
+      "question": "Qual cientista formulou a Lei da Gravitação Universal?",
+      "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Johannes Kepler"],
+      "answer": "Isaac Newton"
+    },
+    {
+      "question": "A gravidade na Lua é aproximadamente:",
+      "options": ["1/6 da gravidade terrestre", "Igual à gravidade terrestre", "1/3 da gravidade terrestre", "2 vezes a gravidade terrestre"],
+      "answer": "1/6 da gravidade terrestre"
+    },
+    {
+      "question": "O que é um campo gravitacional?",
+      "options": [
+        "Uma área onde uma carga elétrica é atraída",
+        "Uma região ao redor de um objeto onde ele exerce força gravitacional",
+        "O movimento de planetas ao redor do Sol",
+        "Uma força que repele objetos"
+      ],
+      "answer": "Uma região ao redor de um objeto onde ele exerce força gravitacional"
+    },
+    {
+      "question": "O que acontece com a gravidade à medida que você se afasta do centro da Terra?",
+      "options": ["Aumenta", "Diminui", "Permanece constante", "Oscila"],
+      "answer": "Diminui"
+    },
+    {
+      "question": "A órbita dos planetas ao redor do Sol é resultado de:",
+      "options": ["Força magnética do Sol", "Gravidade do Sol", "Força centrífuga dos planetas", "Rotação do Sol"],
+      "answer": "Gravidade do Sol"
+    },
+    {
+      "question": "Qual das opções é um exemplo de gravidade em ação?",
+      "options": [
+        "A colisão entre dois carros",
+        "A queda de uma maçã de uma árvore",
+        "O movimento de um avião no céu",
+        "A luz atravessando um prisma"
+      ],
+      "answer": "A queda de uma maçã de uma árvore"
+    },
+    {
+      "question": "Por que os astronautas na Estação Espacial Internacional flutuam?",
+      "options": [
+        "Porque não há gravidade no espaço",
+        "Porque estão em queda livre contínua ao redor da Terra",
+        "Porque a gravidade da Terra não alcança a órbita",
+        "Porque a gravidade da Lua é maior"
+      ],
+      "answer": "Porque estão em queda livre contínua ao redor da Terra"
+    },
+    {
+      "question": "De acordo com a Relatividade Geral, o que causa a gravidade?",
+      "options": [
+        "A força centrípeta",
+        "A curvatura do espaço-tempo causada por massas",
+        "O movimento dos planetas",
+        "A energia cinética dos corpos"
+      ],
+      "answer": "A curvatura do espaço-tempo causada por massas"
+    },
+    {
+      "question": "A constante gravitacional G é:",
+      "options": [
+        "Igual em todos os lugares do universo",
+        "Diferente em cada planeta",
+        "Apenas aplicável na Terra",
+        "Variável com o tempo"
+      ],
+      "answer": "Igual em todos os lugares do universo"
+    },
+    {
+      "question": "Qual é a relação entre gravidade e peso?",
+      "options": [
+        "Peso é a massa dividida pela gravidade",
+        "Peso é o produto da massa pela gravidade",
+        "Gravidade é o peso dividido pela massa",
+        "Gravidade não tem relação com o peso"
+      ],
+      "answer": "Peso é o produto da massa pela gravidade"
+    }
+  ]
+  
