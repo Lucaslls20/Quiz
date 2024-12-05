@@ -15,6 +15,7 @@ export default function QuizApp() {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [correctCount, setCorrectCount] = useState<number>(0);
   const [gameOver, setGameOver] = useState<boolean>(false);
+  const [highlightedOption, setHighlightedOption] = useState<string | null>(null);
 
   // Função para embaralhar um array
   const shuffleArray = <T,>(array: T[]): T[] => {
@@ -25,9 +26,8 @@ export default function QuizApp() {
   };
 
   useEffect(() => {
-    // Embaralhar as perguntas e limitar a 10
     const shuffled = shuffleArray(questions)
-      .slice(0, 10) // Limite de 10 perguntas
+      .slice(0, 10)
       .map((question) => ({
         ...question,
         options: shuffleArray(question.options),
@@ -39,13 +39,18 @@ export default function QuizApp() {
 
   const handleOptionPress = (option: string) => {
     setSelectedOption(option);
+    setHighlightedOption(option);
 
+    // Verificar se a resposta está correta
     if (currentQuestion && option === currentQuestion.answer) {
       setCorrectCount((prev) => prev + 1);
     }
 
+    // Esperar 1 segundo antes de avançar para a próxima pergunta
     setTimeout(() => {
       setSelectedOption(null);
+      setHighlightedOption(null);
+
       if (currentQuestionIndex + 1 < shuffledQuestions.length) {
         setCurrentQuestionIndex((prev) => prev + 1);
       } else {
@@ -56,7 +61,7 @@ export default function QuizApp() {
 
   const resetGame = () => {
     const shuffled = shuffleArray(questions)
-      .slice(0, 10) // Reiniciar com 10 perguntas
+      .slice(0, 10)
       .map((question) => ({
         ...question,
         options: shuffleArray(question.options),
@@ -65,6 +70,7 @@ export default function QuizApp() {
     setCurrentQuestionIndex(0);
     setCorrectCount(0);
     setSelectedOption(null);
+    setHighlightedOption(null);
     setGameOver(false);
   };
 
@@ -127,12 +133,16 @@ export default function QuizApp() {
                   onPress={() => handleOptionPress(option)}
                   style={[
                     styles.optionButton,
-                    selectedOption === option &&
-                      (option === currentQuestion.answer
-                        ? styles.correctOption
-                        : styles.incorrectOption),
+                    selectedOption &&
+                      option === currentQuestion.answer &&
+                      styles.correctOption,
+                    selectedOption &&
+                      option === highlightedOption &&
+                      option !== currentQuestion.answer &&
+                      styles.incorrectOption,
                   ]}
                   labelStyle={styles.optionText}
+                  disabled={selectedOption !== null}
                 >
                   {option}
                 </Button>
